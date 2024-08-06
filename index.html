@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper | main-with-sidebar">
+      <main>
+        <h2 class="title">Desserts</h2>
+        <ul class="product-list"></ul>
+      </main>
+
+      <aside class="cart">
+        <h2 class="cart-quantity">Your Cart (<span></span>)</h2>
+        <div class="cart-wrapper">
+        </div>
+      </aside>
+
+      <div class="confirmation-modal">
+        <div class="modal-inner">
+          <img src="assets/images/icon-order-confirmed.svg" alt="" />
+          <div>
+            <h2>Order Confirmed</h2>
+            <p class="modal-desc">We hope you enjoy your food!</p>
+          </div>
+          <div class="order-info">
+            <ul class="order-list">
+              <!-- Your order items will appear here -->
+            </ul>
+            <div class="order-total-price | total-price">
+              <p>Order Total:</p>
+              <span>$<!-- Total price --></span>
+            </div>
+          </div>
+          <button class="btn | reset-btn" data-type="accent">
+            Start New Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="master.js"></script>
+  </body>
+</html>
